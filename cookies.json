@@ -1,0 +1,45 @@
+[
+  {
+    "name": "ASP.NET_SessionId",
+    "value": "dazqb1mikntrtt43wc4x2vrb",
+    "domain": "app.courtreserve.com",
+    "path": "/",
+    "expires": -1,
+    "size": 41,
+    "httpOnly": true,
+    "secure": false,
+    "session": true,
+    "sameSite": "Lax",
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "sourcePort": 443
+  },
+  {
+    "name": "__RequestVerificationToken",
+    "value": "_rBgSq1G5I0ix6yqO25fE1yJEAM-G3TzrpgyCybu7hm1K1XN_xZjF5SYaT3zRGHdXy77dmbGHIPxAwhf6lf6L6MzHLU1",
+    "domain": "app.courtreserve.com",
+    "path": "/",
+    "expires": -1,
+    "size": 118,
+    "httpOnly": true,
+    "secure": false,
+    "session": true,
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "sourcePort": 443
+  },
+  {
+    "name": ".AspNet.ApplicationCookie",
+    "value": "azEl4Mn8p_QfrEOpIB-9QZxA1B1pkE9FoBgW6y4icmJmQXvHGMFvl4zF7UrwKQWOY8f3IRvcWxwX7oSUeVYBPW22w7Qoo8LujtkO1sHKNiacTZDj4qov7OrOMwZCsgcxqP1CjLG_AFSCaKMW6PnpDTpVOkGgKBet9StdJ6LhNdosWZ6uhpOAxGHoqmbvZvBs6kZOodCri75gK70d9-PGMLOjhsqCA6YTkCAZrOWiWSHTke1EWS9PA9PzeZFKd2ZJtpigmXkDVa600IBuHAG0gWZnn-4DE5dn8O-p6DvclWMb216zxCsECuVq85co4X3w_aVAqYf69O_1VvdLCTVYV2sFccidYB3ur_OGxeGFx87xeaVxB6oF8TGRlAQdw0t6bxHJ_qpOREf2ytOCsqSUzjotECR3QMsvTMFbud4A4WNZ4G_VZEagaWcJXe92apEJTA8zqyBBQRG2XubwA6wcQ3VnrpXg03qfzYmObNYiqpiYsid4255aFJQIZQmPd4rcZiyg90wrQ1y9LZr_20sgSlN3_cZXtVXrBzGGrmwucxTcy89N",
+    "domain": "app.courtreserve.com",
+    "path": "/",
+    "expires": 1710771287.313117,
+    "size": 585,
+    "httpOnly": true,
+    "secure": true,
+    "session": false,
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "sourcePort": 443
+  }
+]
