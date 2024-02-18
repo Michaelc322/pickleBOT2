@@ -1,0 +1,45 @@
+//*[@id="CourtsScheduler"]/table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td[2]/span/button
+
+
+court 1 doubles id : c0aa837f-7915-45f7-a08c-5bfc38cb1151
+
+save button selector: #createReservation-Form > div.modal-footer-container > div > button.btn.btn-primary.btn-submit
+
+#CourtsScheduler > table > tbody > tr:nth-child(2) > td:nth-child(2) > div > table > tbody > tr:nth-child(2) > td:nth-child(2) > span > button
+
+//*[@id="CourtsScheduler"]/table/tbody/tr[2]/td[2]/div/table/tbody/tr[3]/td[2]/span/button
+
+WORKS: COURT 2 11:30 am ROW 3 COLUMN 2
+#CourtsScheduler > table > tbody > tr:nth-child(2) > td:nth-child(2) > div > table > tbody > tr:nth-child(3) > td:nth-child(2) > span > button
+
+
+
+after clicking court wait for reservation details:
+
+    await page.waitForSelector('#reservation-general-info', {timeout: 5_000});
+
+DROP DOWN:
+#reservation-general-info > div > div:nth-child(2) > div > div > span > button
+
+wait for drop down:     await page.waitForSelector('#ReservationTypeId-list > div.k-list-content.k-list-scroller', {timeout: 5_000});
+
+
+
+select doubles: 
+#ReservationTypeId_listbox > li:nth-child(2)
+
+wait for list:
+    await page.evaluate(()=>document.querySelector('#ReservationTypeId_listbox > li:nth-child(2)').click())
+
+
+wait for duration:
+#f75922f2-95dc-4901-9a6d-f3f7f241c0de
+
+#Duration_listbox
+
+
+save button:
+#createReservation-Form > div.modal-footer-container > div > button.btn.btn-primary.btn-submit
+
+here button:
+#ReservationOpenTimeDispplay > span > a
