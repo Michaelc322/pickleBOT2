@@ -115,9 +115,6 @@ async function reserve(page){
     console.log(`Date: ${dateTimeObject.toDateString()}`);
     console.log(`Time: ${dateTimeObject.toTimeString()}`);
 
-    const dateTimeAfter = new Date();
-    console.log(`Date: ${dateTimeAfter.toDateString()}`);
-    console.log(`Time: ${dateTimeAfter.toTimeString()}`);
 
     // wait for here button
      //await page.waitForSelector('#ReservationOpenTimeDispplay > span > a', {timeout: 5_000});
@@ -162,6 +159,7 @@ async function reserve(page){
     // wait for drop down
 
     await page.waitForSelector('#ReservationTypeId-list > div.k-list-content.k-list-scroller', {timeout: 15_000});
+    
     // NEW LINE to make sure doubles is loaded.
     await page.waitForSelector('#ReservationTypeId_listbox > li:nth-child(2)', {timeout: 15_000});
 
@@ -171,16 +169,20 @@ async function reserve(page){
 
     // wait for duration to update
     await page.waitForSelector('#EndTime', {timeout: 10_000})
-
+    await delay(2000);
     await page.evaluate(()=>document.querySelector('#Duration_listbox').click())
 
-    await delay(1000);
+    await delay(2000);
 
     // save
     await page.evaluate(()=>document.querySelector('#createReservation-Form > div.modal-footer-container > div > button.btn.btn-primary.btn-submit').click())
     const dateTimeEnd = new Date();
     console.log(` End Time: ${dateTimeEnd.toTimeString()}`);
     await delay(4000);
+
+    const dateTimeAfter = new Date();
+    console.log(`Date: ${dateTimeAfter.toDateString()}`);
+    console.log(`Time: ${dateTimeAfter.toTimeString()}`);
 
 
 
